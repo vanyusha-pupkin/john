@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html class="page" lang="ru">
+
+    <!-------------------- head -------------------->
+
+@@include('html/_head.html', {
+  'title': ''
+})
+
+  <body class="page__body  page-body">
+    <div class="page__wrapper">
+
+
+      <!----------------- svg-sprite ----------------->
+<!--       <div class="visually-hidden">
+        @include('img/svg-sprite/sprite.svg')
+      </div> -->
+
+      <!------------------- header ------------------->
+      @@include('html/_header.html', {})
+
+      <!------------------- content ------------------>
+
+      <main class="page__main  page-main">
+
+        <div class="container">
+
+<!-- Dynamic Adaptive -->
+
+          <div class="dynamic-adaptive">
+            <h2 class="dynamic-adaptive__title">Динамический адаптив</h2>
+              <section class="content__section">
+                <h2 class="content__title">Я Город</h2>
+                <div class="content__blocks content__blocks-city">
+                  <div data-da=".content__column-garden" class="content__block content__block-1">Я Коля</div>
+                  <div data-da=".content__column-garden, 900, 1" class="content__block content__block-2 click">Я Аня</div>
+                  <div data-da=".content__column-river, 900, last" class="content__block content__block-item content__block-3">Я Ваня</div>
+                </div>
+              </section>
+              <section class="content__section">
+                <h2 class="content__title">Я бабушка</h2>
+                <div class="content__row">
+                  <div class="content__column content__column-garden">
+                    <h3 class="content__title">Я огород</h3>
+                    <div data-da=".content__blocks-city, 700, 3" class="content__block content__block-2">Я Лоцы</div>
+                  </div>
+                  <div class="content__column content__column-river">
+                    <h3 class="content__title">Я речка</h3>
+                    <div class="content__block content__block-3">Я Оля</div>
+                    <!-- <div class="content__block content__block-new-item content__block-3">Я Ваня</div> -->
+                  </div>
+                </div>
+              </section>
+          </div>
+
+<!-- TABS -->
+
+          <h2>TABS</h2>
+          <div class="tabs-block _tabs _scr-item">
+            <nav class="tabs-block__nav">
+              <div class="tabs-block__item _tabs-item _active">Таб №1</div>
+              <div class="tabs-block__item _tabs-item">Таб №2</div>
+              <div class="tabs-block__item _tabs-item">Таб №3</div>
+            </nav>
+            <div class="tabs-block__body">
+              <div class="tabs-block__block _tabs-block _active">
+                [Таб №1] Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus soluta illum deleniti ab hic ipsum quod quidem doloremque commodi. Velit voluptates nesciunt iusto at optio recusandae, explicabo nam deserunt fugiat? Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus soluta illum deleniti ab hic ipsum quod quidem doloremque commodi. Velit voluptates nesciunt iusto at optio recusandae, explicabo nam deserunt fugiat?
+              </div>
+              <div class="tabs-block__block _tabs-block">
+                [Таб №2] Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus soluta illum deleniti ab hic ipsum quod quidem doloremque commodi. Velit voluptates nesciunt iusto at optio recusandae, explicabo nam deserunt fugiat? Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus soluta illum deleniti ab hic ipsum quod quidem doloremque commodi. Velit voluptates nesciunt iusto at optio recusandae, explicabo nam deserunt fugiat?
+              </div>
+              <div class="tabs-block__block _tabs-block">
+                [Таб №3] Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus soluta illum deleniti ab hic ipsum quod quidem doloremque commodi. Velit voluptates nesciunt iusto at optio recusandae, explicabo nam deserunt fugiat? Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus soluta illum deleniti ab hic ipsum quod quidem doloremque commodi. Velit voluptates nesciunt iusto at optio recusandae, explicabo nam deserunt fugiat?
+              </div>
+            </div>
+          </div>
+
+<!-- SPOILERS -->
+
+          <div class="wrapper-spoilers  _scr-item">
+
+            <h2>SPOILERS</h2>
+
+
+            <div class="block block--1" data-spoilers data-one-spoiler>
+              <div class="block__item">
+                <button class="block__title" type="button" tabindex="-1" data-spoiler>
+                  Обычный спойлер №1
+                </button>
+                <div class="block__text">
+                  Lorem ipsum dolor sit amet consectetur, adipisicing elit. Corrupti
+                  animi numquam, consectetur. Quas repudiandae, autem libero ipsa ex
+                  vero dolores dicta aliquid est deserunt odit perspiciatis recusandae
+                  eius obcaecati dolorum.
+                </div>
+              </div>
+              <!-- block__item -->
+
+              <div class="block__item">
+                <button class="block__title" type="button" tabindex="-1" data-spoiler>
+                  Обычный спойлер №2
+                </button>
+                <div class="block__text">
+                  Lorem ipsum dolor sit amet consectetur, adipisicing elit. Corrupti
+                  animi numquam, consectetur. Quas repudiandae, autem libero ipsa ex
+                  vero dolores dicta aliquid est deserunt odit perspiciatis recusandae
+                  eius obcaecati dolorum.
+                </div>
+              </div>
+              <!-- block__item -->
+
+              <div class="block__item">
+                <button class="block__title" type="button" tabindex="-1" data-spoiler>
+                  Обычный спойлер №3
+                </button>
+                <div class="block__text">
+                  Lorem ipsum dolor sit amet consectetur, adipisicing elit. Corrupti
+                  animi numquam, consectetur. Quas repudiandae, autem libero ipsa ex
+                  vero dolores dicta aliquid est deserunt odit perspiciatis recusandae
+                  eius obcaecati dolorum.
+                </div>
+              </div>
+              <!-- block__item -->
+            </div>
+            <!-- block -->
+
+            <div class="block block--2" data-spoilers="650,min">
+              <div class="block__item">
+                <button class="block__title" type="button" tabindex="-1" data-spoiler>
+                  Обычный спойлер №1
+                </button>
+                <div class="block__text">
+                  Lorem ipsum dolor sit amet consectetur, adipisicing elit. Corrupti
+                  animi numquam, consectetur. Quas repudiandae, autem libero ipsa ex
+                  vero dolores dicta aliquid est deserunt odit perspiciatis recusandae
+                  eius obcaecati dolorum.
+                </div>
+              </div>
+              <!-- block__item -->
+            </div>
+            <!-- block -->
+
+            <div class="block block--3" data-spoilers="800,max">
+              <div class="block__item">
+                <button class="block__title" type="button" tabindex="-1" data-spoiler>
+                  Обычный спойлер №1
+                </button>
+                <div class="block__text">
+                  Lorem ipsum dolor sit amet consectetur, adipisicing elit. Corrupti
+                  animi numquam, consectetur. Quas repudiandae, autem libero ipsa ex
+                  vero dolores dicta aliquid est deserunt odit perspiciatis recusandae
+                  eius obcaecati dolorum.
+                </div>
+              </div>
+              <!-- block__item -->
+
+              <div class="block__item">
+                <button class="block__title" type="button" tabindex="-1" data-spoiler>
+                  Обычный спойлер №2
+                </button>
+                <div class="block__text">
+                  Lorem ipsum dolor sit amet consectetur, adipisicing elit. Corrupti
+                  animi numquam, consectetur. Quas repudiandae, autem libero ipsa ex
+                  vero dolores dicta aliquid est deserunt odit perspiciatis recusandae
+                  eius obcaecati dolorum.
+                </div>
+              </div>
+              <!-- block__item -->
+            </div>
+            <!-- block -->
+
+          </div>
+
+
+<!-- GALLERY -->
+
+
+          <div class="gallery-block _scr-item _gallery">
+            <a href="img/01.jpg" class="gallery-block__item">
+              <img src="img/01.jpg" alt="">
+            </a>
+            <a href="img/02.jpg" class="gallery-block__item">
+              <img src="img/02.jpg" alt="">
+            </a>
+            <a href="img/03.jpg" class="gallery-block__item">
+              <img src="img/03.jpg" alt="">
+            </a>
+            <a href="img/04.jpg" class="gallery-block__item">
+              <img src="img/04.jpg" alt="">
+            </a>
+            <a href="img/05.jpg" class="gallery-block__item">
+              <img src="img/05.jpg" alt="">
+            </a>
+          </div>
+
+
+<!-- POPUP -->
+
+
+
+<!-- SLIDER -->
+
+<!-- Slider main container -->
+<div class="swiper-container">
+  <ul class="swiper-wrapper">
+    <li class="swiper-slide"><img src="img/01.jpg" alt=""></li>
+    <li class="swiper-slide"><img src="img/02.jpg" alt=""></li>
+    <li class="swiper-slide"><img src="img/03.jpg" alt=""></li>
+  </ul>
+<!--   <div class="swiper-wrapper">
+    <div class="swiper-slide"><img alt=".." src="img/01.jpg"></div>
+    <div class="swiper-slide"><img alt=".." src="img/02.jpg"></div>
+    <div class="swiper-slide"><img alt=".." src="img/03.jpg"></div>
+  </div> -->
+  <!-- If we need pagination -->
+  <div class="swiper-pagination"></div>
+
+  <!-- If we need navigation buttons -->
+  <div class="swiper-button-prev"></div>
+  <div class="swiper-button-next"></div>
+
+  <!-- If we need scrollbar -->
+  <div class="swiper-scrollbar"></div>
+</div>
+
+<!-- FORM -->
+
+
+<!-- MAP -->
+
+
+<!-- FILTER -->
+
+        <div class="controls">
+            <button type="button" class="control" data-filter="all">All</button>
+            <button type="button" class="control" data-filter=".green">Green</button>
+            <button type="button" class="control" data-filter=".blue">Blue</button>
+            <button type="button" class="control" data-filter=".pink">Pink</button>
+            <button type="button" class="control" data-filter="none">None</button>
+
+            <button type="button" class="control" data-sort="default:asc">Asc</button>
+            <button type="button" class="control" data-sort="default:desc">Desc</button>
+        </div>
+
+        <div class="filter">
+            <div class="mix green"></div>
+            <div class="mix green"></div>
+            <div class="mix blue"></div>
+            <div class="mix pink"></div>
+            <div class="mix green"></div>
+            <div class="mix blue"></div>
+            <div class="mix pink"></div>
+            <div class="mix blue"></div>
+
+            <div class="gap"></div>
+            <div class="gap"></div>
+            <div class="gap"></div>
+        </div>
+
+        </div>
+
+      </main>
+
+
+    <!------------------- footer ------------------->
+    @@include('html/_footer.html', {})
+
+    </div>  <!-- page-body__wrapper -->
+
+    <!---------------- modal-windows --------------->
+    <!-- @include('html/_modal.html', {}) -->
+
+    <!------------- script-connection -------------->
+    <script src="js/script.js"></script>
+
+  </body>
+</html>

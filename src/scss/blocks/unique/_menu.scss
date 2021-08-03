@@ -1,0 +1,36 @@
+.page-header {
+  position: fixed;
+  top: 0;
+  left: 50%;
+  min-height: 40px;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  transform: translate(-50%, 0);
+}
+
+.menu {
+   // .menu__icon
+   &__icon {
+   }
+   // .menu__body
+   &__body {
+   }
+   // .menu__list
+   &__list {
+      display: flex;
+      li {
+         margin: 0px 15px 0px 0px;
+      }
+   }
+   // .menu__link
+   &__link {
+      color: #000;
+      &._active {
+         color: red;
+      }
+   }
+}
