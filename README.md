@@ -1,7 +1,7 @@
-# Проект «---»
+# Проект «john»
 
 ---
-## Ссылка на сайт - [https://vanyusha-pupkin.github.io/---/](https://vanyusha-pupkin.github.io/---/)
+## Ссылка на сайт - [https://vanyusha-pupkin.github.io/john/](https://vanyusha-pupkin.github.io/john/)
 
 ## Как использовать
 
